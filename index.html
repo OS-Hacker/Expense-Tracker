@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="App.js" defer></script>
+  </head>
+  <body>
+    <h1 class="Balance_value">Expense Tracker</h1>
+    <p class="Balance_text">Your Balance</p>
+    <h1 class="Balance_value" id="total">₹0</h1>
+
+    <div class="container">
+      <div class="income_container">
+        <h4 class="text">Income</h4>
+        <h2 class="income">₹00.00</h2>
+      </div>
+      <h1 class="text">|</h1>
+      <div class="expense_container">
+        <h4 class="text">Expense</h4>
+        <h2 class="expense">₹00.00</h2>
+      </div>
+    </div>
+
+    <div class="btn_container">
+      <button type="button" class="Add_btn btn">ADD</button>
+      <button type="button" class="Show_History btn">History</button>
+    </div>
+
+    <div class="Add_transaction">
+      <h2 class="heading">Add Transaction</h2>
+      <form id="transition_form">
+        <span class="Error" style="color: red"></span>
+        <input type="text" id="inputText" placeholder="Enter Title..." autofocus />
+        <input type="number" id="inputAmount" placeholder="Amount"  />
+        <div>
+          <button type="submit" id="btn-income">Income</button>
+          <button type="submit" id="btn-expense">Expense</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- History -->
+    <div class="history">
+      <h3 class="heading">History</h3>
+      <div class="history_container"></div>
+    </div>
+  </body>
+</html>

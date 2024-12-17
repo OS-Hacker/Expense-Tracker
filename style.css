@@ -1,0 +1,195 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 90vh;
+  background-color: rgb(214, 214, 214);
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+.Balance_text {
+  font-size: 15px;
+  margin-top: 30px;
+  color: gray;
+}
+.Balance_value {
+  font-size: 35px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  box-shadow: 2px 2px 5px 2px;
+  padding: 15px;
+  background-color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.text {
+  color: gray;
+  margin-top: 12px;
+  font-weight: 600;
+}
+.income {
+  text-align: center;
+  padding-top: 2px;
+  color: green;
+}
+.expense {
+  text-align: center;
+  padding-top: 2px;
+  color: red;
+}
+.heading {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  margin-top: 12px;
+  font-size: 17px;
+  color: gray;
+  text-align: center;
+}
+input {
+  border: none;
+  padding: 6px 10px;
+  width: 100%;
+  max-width: 300px;
+  background-color: rgb(236, 235, 235);
+  border-radius: 4px;
+  outline: none;
+  font-size: 18px;
+  margin-bottom: 12px;
+  margin-top: 3px;
+}
+.btn {
+  padding: 6px 40px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 15px;
+  margin-top: 5px;
+  background-color: rgb(236, 235, 235);
+  transition: all 0.5s;
+  font-weight: bold;
+  user-select: none;
+}
+.btn:hover {
+  background-color: rgb(28, 24, 24);
+  color: white;
+}
+.btn_container {
+  margin-top: 15px;
+}
+
+/* inistal */
+.history {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+#transition_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#btn-income,
+#btn-expense {
+  padding: 6px 40px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 15px;
+  margin-top: 5px;
+  background-color: rgb(236, 235, 235);
+  transition: all 0.5s;
+  font-weight: bold;
+  user-select: none;
+}
+
+#btn-income:hover {
+  background-color: rgb(28, 213, 111);
+  color: white;
+}
+#btn-expense:hover {
+  background-color: rgb(213, 46, 28);
+  color: white;
+}
+
+.plus {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: rgb(72, 223, 72);
+  padding: 5px 20px;
+  width: 260px;
+  border-radius: 20px;
+  margin-top: 8px;
+  font-size: 17px;
+  color: white;
+  position: relative;
+}
+
+.mins {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: rgb(223, 87, 72);
+  padding: 5px 20px;
+  border-radius: 20px;
+  width: 260px;
+  margin-top: 8px;
+  font-size: 17px;
+  color: white;
+  position: relative;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: rgb(247, 122, 122);
+  border: 0;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 1px 2px;
+  position: absolute;
+  top: 50%;
+  right: -52px;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+}
+
+li:hover .delete-btn {
+  opacity: 1;
+  color: rgb(238, 238, 237);
+}
+
+@media (max-width: 600px) {
+  .Balance_value {
+    font-size: 28px;
+  }
+  .income,
+  .expense {
+    font-size: 20px;
+  }
+  .btn {
+    padding: 6px 35px;
+  }
+}
